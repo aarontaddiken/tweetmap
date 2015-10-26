@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
-gem 'pg'
+gem 'sqlite3'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
 gem 'uglifier', '>= 1.3.0'
@@ -30,11 +30,14 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'guard-bundler'
   # TODO - add guard gems/config from davinci class notes
-
 end
 
 group :test do
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
 ruby '2.2.2'

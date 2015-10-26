@@ -23,14 +23,14 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  # gem 'capybara'​
-  # gem 'faker'​
-  # gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'faker'
+  gem 'shoulda-matchers'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'guard-bundler'
   # TODO - add guard gems/config from davinci class notes
-  # gem 'guard'
 
-  # gem 'guard-rspec', require: false​
-  # gem 'guard-bundler'​
 end
 
 group :test do
